@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,400;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+/* CSS HEX */
+--merlin: #3a322d;
+--pumice: #c3cec8;
+--desert-storm: #ececeb;
+--friar-gray: #807d78;
+--tobacco-brown: #6a5749;
+--shadow: #7d6b55;
+--stonewall: #98877a;
+--dawn: #9e9c9b;
+--hillary: #a79a85;
+
+
+
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--pumice);
+    position: relative;
+}
+
+.main img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+}
+.main::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+.page{
+    
+    width: 100%;
+    height: 100vh;
+
+    
+}
+.content h1 ,.welcome h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.content h3 ,.welcome h3 {
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+.content{
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    margin-right: 10% ;
+}
+.welcome,.decoration{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container{
+    height: 100%;
+    width: 40%;
+    background-color: #c3cec8;
+    display: flex;
+    align-items: flex-end;
+}
+.image-container img{
+    width: 100%;
+    height: 80%;
+}
+.page-content{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 60%;
+    height: 80%;
+    position: relative;
+}
+.page-content .content{
+    position: absolute;
+    left:25%;
+    width: 50%;
+}
+.decoration .image-container img{
+  width: 70%;
+  
+}
+.theory .image-container{
+    width: 70%;
+    display: flex;
+    position: absolute;
+    height: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+  }
+  .theory .image-container :nth-child(1){
+    flex: 2;
+  }
+  .theory .image-container :nth-child(2){
+    flex: 1;
+  }
+.decoration .image-container{
+    height: 100%;
+    width: 40%;
+    background-color: #c3cec8;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.theory .image-container img{
+    height: 100%;
+}
+.decoration .page-content .content h2{
+    font-size: 30px;
+    margin: 50px auto;
+}
+.text{
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    letter-spacing:2px;
+    font-size: 8em;
+    font-weight: 900;
+    opacity: 0.5;
+}
+.welcome .text{
+    top: 0;
+    font-size: 5em;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    padding: 50px;
+    position: relative;
+    background: whitesmoke;
+}
+.style{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.style .left-top-corner{
+    width: 10%;
+    height: 50%;
+    top: 0;
+    left:0;
+    background-color: var(--pumice);
+    position: absolute;
+}
+.style .left-bottom-corner{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    bottom: 0;
+    left:0;
+
+    position: absolute;
+}
+.style .container::after{
+    content: 'Interior';
+    color: #fff;
+    position: absolute;
+    font-size: 5em;
+    font-weight: 900;
+    opacity: 0.5;
+    letter-spacing: 3px;
+    top: 30%;
+    right:25%;
+    color: var(--pumice);
+
+}
+.style .right-bottom-corner{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/img9.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.style::before{
+    content: '';
+    z-index: 1;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    background-image: url('./assets/img10.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.style .left-bottom-corner h1{
+    font-size: 40px;
+}
+.style .left-bottom-corner h2{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.theory{
+
+    position: relative;
+    font-size: 16px;
+}
+.theory .text{    
+    letter-spacing:0.5px;
+    color: var(--pumice);
+    right: 10px;
+    top: 10px;
+    font-size: 3em;
+    font-weight: 900;
+    writing-mode: vertical-rl; /* vertical right-to-left */
+  text-orientation: upright; /* upright orientation */
+}
+.theory .page-content {
+    height: 50%;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    bottom: 50px ;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+
+}
+.theory .page-content .cntnt{
+    padding: 20px;
+    padding-top: 100px;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background-color: var(--pumice);
+}
+.theory .page-content .cntnt h2{
+    margin-bottom: 30px;
+
+}
+
+.theory .page-content .cntnt::before{
+    content: "Interiors";
+    letter-spacing: 1px;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    font-weight: 700;
+    left: -120%;
+}.theory .page-content .cntnt::after{
+    content: "some thing to say";
+    font-size: 16px;
+    position: absolute;
+    top: 70%;
+    font-weight: 700;
+    left: -120%;
+}
+.project-introduction{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+}
+.project-introduction::after{
+    content: '';
+    width:  5%;
+    height: 40%;
+    background-color: var(--pumice);
+    top: 50%;
+    right: 0;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 24px; /* Adjust the font size as needed */
+    line-height: 1.2; /* Adjust the line height for proper spacing */
+}
+.project-introduction .image-container{
+    background-color: #fff;
+    height: 100%;
+    margin: 0;
+    width: 45%;
+}
+.project-introduction .page-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-introduction .page-content{
+    padding: 50px;
+}
+.project-introduction .image-container img{
+    height: 100%;
+}
